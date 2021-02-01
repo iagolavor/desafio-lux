@@ -1,5 +1,5 @@
 <template>
-    <v-row ml-1 class="lettermark">
+    <v-row class="lettermark">
         <div class="github">
             Github
         </div>
@@ -20,15 +20,16 @@ export default {
 
 <style scoped>
 .lettermark{
-    position: absolute;
     width: 473px;
     height: 76px;
-    justify-content: space-between;
-    left: 477px;
-    top: 445px;
+    justify-content: space-around;
 }
+.lettermark.row{
+    margin: 0 auto;
+}
+
 .github{
-    font-family: Roboto;
+    font-family: Roboto Mono;
     font-size: 64px;
     font-weight:700 
 }

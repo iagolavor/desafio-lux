@@ -27,11 +27,8 @@ export default {
 
 <style scoped>
 .searchbar{
-    position: absolute;
     width: 700px;
     height: 50px;
-    left: 370px;
-    top: 528px;
 }
 
 .searchbutton{
