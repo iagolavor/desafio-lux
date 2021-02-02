@@ -16,5 +16,6 @@
 }
 .container{
   min-height: 1024px;
+  max-width: 1440px;
 }
 </style>

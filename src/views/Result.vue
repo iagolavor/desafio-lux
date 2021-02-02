@@ -1,7 +1,7 @@
 <template>
-    <v-row>
+    <v-container>
         <Header/>
-    </v-row>
+    </v-container>
 </template>
 
 <script>
@@ -17,3 +17,6 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+</style>

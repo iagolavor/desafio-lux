@@ -1,6 +1,6 @@
 <template>
-    <div class="header">
-        <div class="lettermark">
+    <v-row justify="space-between" style="max-width:1440px; margin:0 auto;">
+        <div style="width:311px; display:flex; justify-content:space-around;">
             <div class="github">
                 Github
             </div>
@@ -8,8 +8,11 @@
                 Search
             </div>
         </div>
-        <Searchbar/>
-    </div>
+        <v-spacer/>
+        <div style="width:700px;">
+            <Searchbar/>
+        </div>
+    </v-row>
 </template>
 
 <script>
@@ -26,14 +29,14 @@ export default {
 </script>
 
 <style scoped>
-.header{
-    width: 1384px;
-    height: 50px;
+.lettermark{
+    width: 311px;
+    align-items: center;
 }
 .github{
     font-family: Roboto Mono;
     font-weight: 700;
-    font: 42px;
+    font-size: 42px;
 }
 .search{
     font-family: Rubik;
