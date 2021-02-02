@@ -1,14 +1,19 @@
 <template>
-    <div class="result">
-        Result: {{this.$router.params}}
-    </div>
+    <v-row>
+        <Header/>
+    </v-row>
 </template>
 
 <script>
+import Header from '@/components/Header.vue'
+
 export default {
     name: 'Result',
     data: () => ({
 
-    })
+    }),
+    components:{
+        Header
+    }
 }
 </script>

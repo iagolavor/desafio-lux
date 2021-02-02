@@ -20,5 +20,10 @@ export default {
 </script>
 
 <style scoped>
-
+.home{
+  align-items: center;
+  justify-content: center;
+  width: inherit;
+  height: inherit;
+}
 </style>

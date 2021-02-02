@@ -1,5 +1,5 @@
 <template>
-    <v-row class="searchbar" grow>
+    <v-row class="searchbar">
         <v-text-field
             v-model="textfield"
             outlined
@@ -29,7 +29,7 @@ export default {
             getUser(this.textfield).then(res => {
                 console.log(res);
                 console.log(res.data.login)
-                let login = res.data.login
+                var login = res.data.login
                 this.$router.push({name:'result', params: {username: login}});
             }).catch(err => {
                 console.log(err);
@@ -43,6 +43,7 @@ export default {
 .searchbar{
     width: 700px;
     height: 50px;
+    margin: 0 auto;
 }
 
 .searchbutton{

@@ -1,9 +1,7 @@
 <template>
   <div id="app">
-    <v-container fill-height>
-      <v-row class="helper">
-        <router-view/>
-      </v-row>
+    <v-container fill-height class="container">
+      <router-view/>
     </v-container>
   </div>
 </template>
@@ -16,10 +14,7 @@
   text-align: center;
   color: #2c3e50;
 }
-
-.helper{
-  align-items: center;
-  justify-content: center;
+.container{
   min-height: 1024px;
 }
 </style>
