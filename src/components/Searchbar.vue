@@ -10,18 +10,32 @@
             height="50px"
         >
         </v-text-field>
-        <v-card class="searchbutton" dark color="grey darken-2">
+        <v-card class="searchbutton" dark color="grey darken-2" @click="search">
             <v-icon style="padding-top:15px">mdi-magnify</v-icon>
         </v-card>
     </v-row>
 </template>
 
 <script>
+import { getUser } from '@/services.js';
+
 export default {
     name: 'Searchbar',
     data: () => ({
         textfield: null
-    })
+    }),
+    methods:{
+        search: function(){
+            getUser(this.textfield).then(res => {
+                console.log(res);
+                console.log(res.data.login)
+                let login = res.data.login
+                this.$router.push({name:'result', params: {username: login}});
+            }).catch(err => {
+                console.log(err);
+            })
+        }
+    }
 }
 </script>
 
